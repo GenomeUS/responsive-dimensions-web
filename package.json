@@ -1,0 +1,21 @@
+{
+  "name": "responsive-dimensions-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/node-dimensions-web.js",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Farid Saud",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
