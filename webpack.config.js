@@ -5,8 +5,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'node-dimensions-web.js',
-    library: 'nodeDimensionsWeb',
+    filename: 'responsive-dimensions-web.js',
+    library: 'responsiveDimensionsWeb',
     libraryTarget: 'umd',
   },
 };
