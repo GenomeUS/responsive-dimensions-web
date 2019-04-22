@@ -50,7 +50,7 @@ export const getWidthValue = (widthValueInSketch,
  */
 export const getHeightValue = (heightValueInSketch,
   { height } = sketch,
-  { width: baseHeight } = baseValues) => heightValueInSketch / height * baseHeight;
+  { height: baseHeight } = baseValues) => heightValueInSketch / height * baseHeight;
 
 
 export default {
