@@ -34,21 +34,23 @@ export const init = ({
  * Get the actual number of pixels used for width dimensions
  * @param widthValueInSketch width value in the sketch file to be converted
  * @param width width number of pixels of a sketch's screen width
+ * @param baseWidth width in pixels used as 100%
  * @returns {number}
  */
-export const getWidthValue = (widthValueInSketch, {
-  width,
-} = sketch) => widthValueInSketch / width * baseValues.width;
+export const getWidthValue = (widthValueInSketch,
+  { width } = sketch,
+  { width: baseWidth } = baseValues) => widthValueInSketch / width * baseWidth;
 
 /**
  * Get the actual number of pixels used for height dimensions
  * @param heightValueInSketch height value in the sketch file to be converted
  * @param height height number of pixels of a sketch's screen height
+ * @param baseHeight width in pixels used as 100%
  * @returns {number}
  */
-export const getHeightValue = (heightValueInSketch, {
-  height,
-} = sketch) => heightValueInSketch / height * baseValues.height;
+export const getHeightValue = (heightValueInSketch,
+  { height } = sketch,
+  { width: baseHeight } = baseValues) => heightValueInSketch / height * baseHeight;
 
 
 export default {
